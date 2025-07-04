@@ -6,3 +6,5 @@
 ./Utils/firebase.js
 .firebaserc
 .firebase.json
+/build/
+.firebase/
