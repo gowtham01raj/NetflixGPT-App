@@ -1,0 +1,8 @@
+/node_modules
+.parcel-cache/
+/dist
+.postcss.config.mjs
+.postcssrc
+./Utils/firebase.js
+.firebaserc
+.firebase.json
