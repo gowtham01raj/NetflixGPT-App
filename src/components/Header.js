@@ -33,15 +33,13 @@ const Header = () => {
         navigate("/");
       }
     });
+    
     return () => unsubscribe();
   }, []);
+  
   return (
     <div className="absolute px-8 w-full py-4 bg-gradient-to-b from-black z-10 flex justify-between">
-      <img
-        className="w-44"
-        src={NETFLIX_LOGO}
-        alt="logo"
-      />
+      <img className="w-44" src={NETFLIX_LOGO} alt="logo" />
       {userDetails && (
         <div className="flex p-2">
           {userDetails.photoURL ? (
