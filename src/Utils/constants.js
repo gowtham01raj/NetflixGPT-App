@@ -123,7 +123,16 @@ export const moviesList = [
 export const MOVIE_URL =
   "https://www.omdbapi.com/?apikey=5c0d6832&plot=full&t=";
 
-export const popularityMovies =
+export const PlayingMovies =
   "https://api.themoviedb.org/3/movie/now_playing?&page=1";
 
 export const IMAGE_URL = "https://image.tmdb.org/t/p/w780";
+
+export const popularityMovies =
+  "https://api.themoviedb.org/3/movie/popular?language=en-US&page=1";
+
+export const topRatedMovies =
+  "https://api.themoviedb.org/3/movie/top_rated?language=en-US&page=1";
+
+export const UpcomingMovies =
+  "https://api.themoviedb.org/3/movie/upcoming?language=en-US&page=1";

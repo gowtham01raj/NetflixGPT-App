@@ -3,8 +3,8 @@ import { IMAGE_URL } from "../Utils/constants";
 
 const MovieCard = ({ poster_path, title }) => {
   return (
-    <div className="w-[200px] pr-6">
-      <img className=""src={IMAGE_URL + poster_path} alt={title} />
+    <div className="w-[200px] p-3 hover:scale-[1.25] cursor-pointer transform transition-transform  rounded-lg ">
+      <img className="" src={IMAGE_URL + poster_path} alt={title} />
     </div>
   );
 };

@@ -4,6 +4,9 @@ const moviesSlice = createSlice({
   name: "movies",
   initialState: {
     nowPlayingMovies: null,
+    TrendingMovies: null,
+    PopularMovies: null,
+    UpcomingMovies: null,
     trailerVideo: [
       "hXzcyx9V0xw",
       "Eyl4sQFkQiM",
@@ -29,11 +32,29 @@ const moviesSlice = createSlice({
       // Toolkit + Immer lets us push directly
       state.nowPlayingMovies = action.payload;
     },
+    addTrendingMovies: (state, action) => {
+      // Toolkit + Immer lets us push directly
+      state.TrendingMovies = action.payload;
+    },
+    addPopularMovies: (state, action) => {
+      // Toolkit + Immer lets us push directly
+      state.PopularMovies = action.payload;
+    },
+    addUpcomingMovies: (state, action) => {
+      // Toolkit + Immer lets us push directly
+      state.UpcomingMovies = action.payload;
+    },
     addTrailerVideos: (state, action) => {
       state.trailerVideo = action.payload;
     },
   },
 });
 
-export const { addNowPlayingMovies } = moviesSlice.actions;
+export const {
+  addNowPlayingMovies,
+  addTrailerVideos,
+  addTrendingMovies,
+  addPopularMovies,
+  addUpcomingMovies,
+} = moviesSlice.actions;
 export default moviesSlice.reducer;
