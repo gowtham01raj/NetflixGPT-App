@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const moviesSlice = createSlice({
   name: "movies",
   initialState: {
-    nowPlayingMovies: [],
+    nowPlayingMovies: null,
     trailerVideo: [
       "hXzcyx9V0xw",
       "Eyl4sQFkQiM",
@@ -22,16 +22,16 @@ const moviesSlice = createSlice({
       "AEdb8sQp3qA",
       "lHy5uu0NxWo",
       "NlyhXwxoO6o",
-    ], 
+    ],
   },
   reducers: {
     addNowPlayingMovies: (state, action) => {
       // Toolkit + Immer lets us push directly
-      state.nowPlayingMovies.push(action.payload);
+      state.nowPlayingMovies = action.payload;
     },
-    addTrailerVideos:(state,action)=>{
-      state.trailerVideo=action.payload;
-    }
+    addTrailerVideos: (state, action) => {
+      state.trailerVideo = action.payload;
+    },
   },
 });
 

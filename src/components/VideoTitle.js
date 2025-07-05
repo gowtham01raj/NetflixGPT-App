@@ -1,10 +1,11 @@
 import React from "react";
 
-const VideoTitle = ({ title, released, year }) => {
+const VideoTitle = ({ title, released, overview }) => {
   return (
-    <div className="p-42 px-24 pt-[20%] w-screen aspect-video absolute text-white bg-gradient-to-r from-black">
+    <div className="p-42 px-24 pt-[10%] w-screen aspect-video absolute text-white bg-gradient-to-r from-black">
       <h1 className="text-6xl font-extrabold">{title}</h1>
-      <h1 className="py-6 text-lg w-1/4">{released}</h1>
+      <p className="w-1/3 py-2">{overview}</p>
+      <h1 className="pb-6 text-lg w-1/4">{released}</h1>
       <div className="">
         <button className="bg-white opacity-70 cursor-pointer font-bold border hover:bg-gray-500 text-center roudned-lg text-black p-4 rounded-lg mx-2 px-16 gap-1.5">
           ▶Play
