@@ -1,10 +1,11 @@
-/node_modules
+/node_modules/
 .parcel-cache/
-/dist
+dist/
 .postcss.config.mjs
 .postcssrc
 ./Utils/firebase.js
 .firebaserc
 .firebase.json
-/build/
+/build
 .firebase/
+/
